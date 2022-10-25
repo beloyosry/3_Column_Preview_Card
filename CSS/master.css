@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+ *{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: hsl(0, 0%, 95%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    font-family: 'Lexend Deca',
+        sans-serif;
+    font-weight: 400;
+}
+main{
+    max-width: 960px;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    align-items:center;
+    margin: 2rem;
+    overflow: hidden;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+}
+.card{
+    padding: 40px;
+}
+.first{
+    background-color: hsl(31, 77%, 52%);
+}
+.second{
+    background-color: hsl(184, 100%, 22%);
+}
+.third{
+    background-color: hsl(179, 100%, 13%);
+}
+.card h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    margin-top: 30px;
+}    
+.card p{
+    line-height: 1.6;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-top: 30px;
+}
+.card a{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 27px;
+    border-radius: 26px;
+    margin-top: 60px;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius: 26px;
+    -moz-border-radius: 26px;
+    -ms-border-radius: 26px;
+    -o-border-radius: 26px;
+}
+.orange{
+    color: hsl(31, 77%, 52%);
+}
+.dark-cyan{
+    color: hsl(184, 100%, 22%);
+}
+.very-dark-cyan{
+    color: hsl(179, 100%, 13%);
+}
+.card a:hover{
+    color: hsl(0, 0%, 95%);
+    background-color: transparent;
+}
+@media only screen and (max-width: 768px) {
+    .box {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .box {
+        margin: 2rem .5rem;
+    }
+}
